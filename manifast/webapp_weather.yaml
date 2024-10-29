@@ -28,7 +28,7 @@ spec:
         app: weather-app
     spec:
       containers:
-      - image: matankaufman/web-app:239
+      - image: matankaufman/web-app:latest
         imagePullPolicy: IfNotPresent
         name: web-app
         resources: {}
