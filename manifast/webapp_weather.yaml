@@ -7,8 +7,6 @@ metadata:
     app: weather-app
   name: weather-app
   namespace: argocd
-  resourceVersion: "9328"
-  uid: 0c9bfec6-9d19-45f6-8463-d87b7c578a75
 spec:
   progressDeadlineSeconds: 600
   replicas: 2
@@ -23,7 +21,6 @@ spec:
     type: RollingUpdate
   template:
     metadata:
-      creationTimestamp: null
       labels:
         app: weather-app
     spec:
