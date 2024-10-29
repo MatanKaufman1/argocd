@@ -28,7 +28,7 @@ jobs:
       - name: Build and push to Docker-Hub
         uses: docker/build-push-action@v3
         with:
-          context: .
+          context: web-app/.
           push: true
           tags: matankaufman/web-app:${{ steps.version.outputs.version-string }}
 
