@@ -37,7 +37,7 @@ jobs:
           sed -i 's|image: matankaufman/web-app:.*|image: matankaufman/web-app:${{ steps.version.outputs.version-string }}|' manifast/webapp_weather.yaml
           git config --local user.name "GitHub Actions"
           git config --local user.email "actions@github.com"
-          git add manifests/webapp_weather.yaml
+          git add manifast/webapp_weather.yaml
           git commit -m "Update image to latest version [skip ci]"
           git pull origin main --rebase
           git push origin HEAD:main
