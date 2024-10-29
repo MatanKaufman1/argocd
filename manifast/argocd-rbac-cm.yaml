@@ -6,6 +6,4 @@ metadata:
 data:
   policy.csv: |
     p, reader-user, applications, get, */*, allow
-    g, reader-user, role:readonly
-    accounts.reader-user: apiKey,login
   scopes: '[groups, email]'
