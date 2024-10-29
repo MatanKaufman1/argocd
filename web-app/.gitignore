@@ -1,0 +1,32 @@
+# Ignore all files
+*
+
+# But not directories
+!*/
+
+# Ignore venv
+.venv/
+.venv/*
+
+# Allow specific file types
+!*.h
+!*.c
+!*.sh
+!*.md
+!*.py
+!*.yaml
+!*.yml
+!*.conf
+!*.txt
+
+# Allow specific files
+!.gitignore
+!.myfuncs
+!.conf
+!Dockerfile
+!Jenkinsfile
+# Ignore all .idea directories and files
+.idea/
+.idea/*
+
+

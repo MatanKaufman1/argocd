@@ -1,0 +1,23 @@
+global:
+  scrape_interval: 10s
+alerting:
+  alert_managers:
+    - static_configs:
+        - targets:
+           - alert-manager:9093
+rule_files:
+  - alert_rule.yml
+scrape_configs:
+ - job_name: prometheus
+   static_configs:
+    - targets:
+       - prometheus:9090
+ - job_name: node
+   static_configs:
+    - targets:
+       - node-exporter:9100
+ - job_name: kweather
+   static_configs:
+    - targets:
+       - 54.234.209.197:5000
+       - 54.145.146.108:9100
