@@ -34,5 +34,5 @@ jobs:
 
       - name: update manifest
         run: |
-          sed -i "s/latest/${{ steps.version.outputs.version-string }}/g" manifast/webapp_weather.yaml
-
+          sed -i 's|image: matankaufman/web-app:.*|image: matankaufman/web-app:${{ steps.version.outputs.version-string }}|' manifast/webapp_weather.yaml
+          git push origin main
